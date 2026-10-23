@@ -32,8 +32,6 @@ function App() {
       return;
     }
     if(taskInfo.id) {
-      console.log(taskInfo);
-      let taskId = taskInfo.id;
       setTaskList((prev) => 
         prev.map((task) => 
          taskInfo.id === task.id ? { ...task, ...taskInfo } : task
